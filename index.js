@@ -15,6 +15,7 @@ const SCOPES = [
 async function doAuth() {
   //   const credential = await fs.readFile("key.json");
   const auth = await authenticate({
+    //give your credentials filename in place of key.json
     keyfilePath: path.join(__dirname, "key.json"),
     scopes: SCOPES,
   });
